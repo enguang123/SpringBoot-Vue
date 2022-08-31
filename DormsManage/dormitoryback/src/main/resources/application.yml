@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    username: root
+    password: xyzmysql
+    url: jdbc:mysql://127.0.0.1:3306/dormitory
+    driver-class-name: com.mysql.jdbc.Driver
+#
+#mybatis:
+#  mapper-locations:classpath: /mapper/*.xml
+#  type-aliases-package: com.example.demo.model
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: coding/xyz/dormitory/mapper/xml/*.xml
+
+server:
+  port: 9000
